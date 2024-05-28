@@ -21,30 +21,20 @@ body{
     
 }
 
+img{
+    max-width: 100%;
+}
 
 
 
 /* SEARCHBAR */
-/* .searchbar{
-    width: 100%;
-    height: var(--searchbar-height);
-    background-color: blue;
-
-    position: fixed;
-    top: 0;
-} */
+.mobile-logo{
+    width: 3rem;
+}
 
 
 /* SIDEBAR */
-/* .sidebar{
-    width: var(--sidebar-width);
-    height: calc(100% - var(--searchbar-height));
-    background-color: red;
 
-    position: fixed;
-    left: 0;
-    bottom: 0;
-} */
 
 
 
