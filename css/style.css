@@ -1,3 +1,59 @@
-*{
-    background-color: red;
+/* GENERAL */
+
+body{
+    position: relative;
 }
+
+/* VARIABILI PER CAMBI VELOCI LAYOUT */
+:root{
+    --searchbar-height: 10rem;
+}
+
+/* BOOTSTRAP COLUMNS */
+[class*="col-"]{
+    min-height: 2rem;
+    border: 1px dashed black;
+}
+
+
+
+
+/* SEARCHBAR */
+.searchbar{
+    width: 100%;
+    height: var(--searchbar-height);
+    position: fixed;
+    top: 0;
+}
+
+
+/* SIDEBAR */
+.sidebar{
+    position: fixed;
+    width: 100%;
+}
+
+
+
+/* HEADER */
+
+
+
+/* MAIN */
+
+
+
+/* Next Classes */
+
+
+
+/* F.A.Q. */
+
+
+
+/* To Do */
+
+
+
+/* Active Users */
+
