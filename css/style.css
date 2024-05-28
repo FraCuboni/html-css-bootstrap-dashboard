@@ -4,34 +4,47 @@ body{
     position: relative;
 }
 
+
 /* VARIABILI PER CAMBI VELOCI LAYOUT */
 :root{
-    --searchbar-height: 10rem;
+    --searchbar-height: 4rem;
+
+    --sidebar-width: 4rem;
 }
+
 
 /* BOOTSTRAP COLUMNS */
 [class*="col-"]{
     min-height: 2rem;
     border: 1px dashed black;
+    height: 100%;
+    
 }
 
 
 
 
 /* SEARCHBAR */
-.searchbar{
+/* .searchbar{
     width: 100%;
     height: var(--searchbar-height);
+    background-color: blue;
+
     position: fixed;
     top: 0;
-}
+} */
 
 
 /* SIDEBAR */
-.sidebar{
+/* .sidebar{
+    width: var(--sidebar-width);
+    height: calc(100% - var(--searchbar-height));
+    background-color: red;
+
     position: fixed;
-    width: 100%;
-}
+    left: 0;
+    bottom: 0;
+} */
 
 
 
