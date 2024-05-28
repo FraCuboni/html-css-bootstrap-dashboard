@@ -1,35 +1,68 @@
 /* GENERAL */
 
 body{
-    position: relative;
+    height: 2000px;
+    color: red;
 }
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+/* COLORI */
+#dark-blue{
+    background-color: #0e253b;
+    color: white;
+    height: 100vh;
+
+}
+
+#blue{
+    background-color: #1b72e8;
+    color: white;
+}
+
+
+
+
+
 
 
 /* VARIABILI PER CAMBI VELOCI LAYOUT */
-:root{
+/* :root{
     --searchbar-height: 4rem;
 
     --sidebar-width: 4rem;
-}
+} */
+
 
 
 /* BOOTSTRAP COLUMNS */
 [class*="col-"]{
     min-height: 2rem;
     border: 1px dashed black;
-    height: 100%;
     
 }
 
-img{
-    max-width: 100%;
-}
+
 
 
 
 /* SEARCHBAR */
-.mobile-logo{
-    width: 3rem;
+
+#searchbar{
+    height: 3rem;
+}
+
+
+.logo{
+    height: 2.5rem;
 }
 
 
