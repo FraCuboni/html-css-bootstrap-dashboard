@@ -1,8 +1,6 @@
 /* GENERAL */
 
 body{
-    height: 2000px;
-    color: red;
 }
 
 img{
@@ -19,7 +17,6 @@ li{
 #dark-blue{
     background-color: #0e253b;
     color: white;
-    height: 100vh;
 
 }
 
@@ -45,8 +42,6 @@ li{
 
 /* BOOTSTRAP COLUMNS */
 [class*="col-"]{
-    min-height: 2rem;
-    border: 1px dashed black;
     
 }
 
