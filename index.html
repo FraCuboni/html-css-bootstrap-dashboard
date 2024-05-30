@@ -33,8 +33,10 @@
                   <img class="d-inline-block align-top" src="img/logo.svg" alt="">
               </div>
           </a>
-          <input type="text">
-          <a href=""><i>bell</i></a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder=" Search" aria-label="Search">
+            </form>
+          <a href=""><i class="fa-solid fa-bell"></i></a>
       </div>
   </nav>
 
@@ -49,11 +51,31 @@
         <div id="dark-blue" class="col-2 col-md-1">
 
 
-          <ul class="p-0">
-            <li>m</li>
-            <li>m</li>
-            <li>m</li>
-            <li>m</li>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-house"></i>
+                <span class="d-none d-lg-inline"> Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">   
+                <i class="fa-solid fa-chart-simple"></i>
+                <span class="d-none d-lg-inline"> Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-signal"></i>
+                <span class="d-none d-lg-inline"> Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mt-auto">
+                <i class="fa-solid fa-gear"></i>
+                <span class="d-none d-lg-inline"> Admin</span>
+              </a>
+            </li>
           </ul>
 
 
@@ -67,7 +89,7 @@
 
 
             <!-- BLUE SECTION -->
-            <div id="blue" class="row">
+            <div id="blue" class="row bg-primary">
               <div class="col-12">
 
                 <div class="container-fluid p-0">
@@ -75,15 +97,40 @@
 
                     <!-- Add New Student -->
                     <div class="col-12 col-md-4 order-md-3">
-                        <span>Nuovo Studente</span>
-                        <button type="button" class="btn btn-outline-light">
-                          <i class="fa-solid fa-plus"></i>
-                        </button>  
+
+                      <span>Nuovo Studente</span>
+                      <button type="button" class="btn btn-outline-light">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>  
+
                     </div>
 
                     <!-- Boolean Plan & Breadcrumbs-->
                     <div class="col-12 col-md-4 order-md-1">
-                        <h4>Boolean</h4>
+
+                      <h1 class="d-inline">Boolean</h1>
+                      <span id="blue-pill" class="badge rounded-pill d-inline">Primary</span>
+
+                      <!-- Breadcrumbs -->
+                      <div>
+
+                        <span id="blue-pill" class="badge rounded-pill">3 app</span>
+                        <span><i class="fa-solid fa-angles-right"></i></span>
+
+                        <div class="d-none d-lg-inline">
+                          <span id="blue-pill" class="badge rounded-pill">Boolean mobile app</span>
+                          <span id="blue-pill" class="badge rounded-pill">Boolean web app</span>
+                          <span id="blue-pill" class="badge rounded-pill">Boolean blog app</span>
+                        </div>
+
+                        <div class="d-inline d-lg-none">
+                          <span id="blue-pill" class="badge rounded-pill">+</span>
+                        </div>
+
+                      </div>
+
+                      
+
                     </div>
 
                     <!-- Online Students -->
@@ -102,13 +149,13 @@
             <!-- WHITE SECTION -->
             <div class="row">
               <div class="col-12">
-                <div class="container-fluid p-0">
+                <div class="container-fluid px-0 py-4">
                   <div class="row">
 
                     <!-- LEFT WHITE SECTION -->
                     <div class="col-12 col-lg-7">
-                      <div class="container-fluid">
-                        <div class="row">
+                      <div class="container-fluid p-0">
+                        <div class="row gy-4">
 
 
                           <!-- Next Classes -->
@@ -130,7 +177,7 @@
                                     <tr>
                                       <th scope="col">Nome</th>
                                       <th scope="col">Data inizio</th>
-                                      <th scope="col">ROI</th>
+                                      <th  scope="col">ROI</th>
                                       <th scope="col">Stato</th>
                                       <th scope="col">Azioni</th>
                                     </tr>
@@ -141,7 +188,7 @@
 
 
                                     <tr>
-                                      <th scope="row">Data inizio</th>
+                                      <th scope="row"><i class="fa-solid fa-code"></i> Classe 7n</th>
                                       <td>15 Feb 2021</td>
                                       <td>20%</td>
                                       <td><span class="badge text-bg-success">Done</span></td>
@@ -152,7 +199,7 @@
                                     </tr>
                                     
                                     <tr>
-                                      <th scope="row">Data inizio</th>
+                                      <th scope="row"><i class="fa-solid fa-code"></i> Classe 7n</th>
                                       <td>15 Feb 2021</td>
                                       <td>20%</td>
                                       <td><span class="badge text-bg-danger">failed</span></td>
@@ -163,7 +210,7 @@
                                     </tr>
 
                                     <tr>
-                                      <th scope="row">Data inizio</th>
+                                      <th scope="row"><i class="fa-solid fa-code"></i> Classe 7n</th>
                                       <td>15 Feb 2021</td>
                                       <td>20%</td>
                                       <td><span class="badge text-bg-warning">process</span></td>
@@ -174,7 +221,7 @@
                                     </tr>  
 
                                     <tr>
-                                      <th scope="row">Data inizio</th>
+                                      <th scope="row"><i class="fa-solid fa-code"></i> Classe 7n</th>
                                       <td>15 Feb 2021</td>
                                       <td>20%</td>
                                       <td><span class="badge text-bg-warning">process</span></td>
@@ -185,7 +232,7 @@
                                     </tr> 
 
                                     <tr>
-                                      <th scope="row">Data inizio</th>
+                                      <th scope="row"><i class="fa-solid fa-code"></i> Classe 7n</th>
                                       <td>15 Feb 2021</td>
                                       <td>20%</td>
                                       <td><span class="badge text-bg-warning">process</span></td>
@@ -196,7 +243,7 @@
                                     </tr> 
 
                                     <tr>
-                                      <th scope="row">Data inizio</th>
+                                      <th scope="row"><i class="fa-solid fa-code"></i> Classe 7n</th>
                                       <td>15 Feb 2021</td>
                                       <td>20%</td>
                                       <td><span class="badge text-bg-warning">process</span></td>
@@ -207,7 +254,7 @@
                                     </tr> 
 
                                     <tr>
-                                      <th scope="row">Data inizio</th>
+                                      <th scope="row"><i class="fa-solid fa-code"></i> Classe 7n</th>
                                       <td>15 Feb 2021</td>
                                       <td>20%</td>
                                       <td><span class="badge text-bg-warning">process</span></td>
@@ -218,7 +265,7 @@
                                     </tr> 
 
                                     <tr>
-                                      <th scope="row">Data inizio</th>
+                                      <th scope="row"><i class="fa-solid fa-code"></i> Classe 7n</th>
                                       <td>15 Feb 2021</td>
                                       <td>20%</td>
                                       <td><span class="badge text-bg-warning">process</span></td>
@@ -312,8 +359,8 @@
 
                     <!-- RIGHT WHITE SECTION -->
                     <div class="col-12 col-lg-5">
-                      <div class="container-fluid">
-                        <div class="row">
+                      <div class="container-fluid p-0">
+                        <div class="row gy-4">
 
 
                           <!-- To Do -->
@@ -441,15 +488,7 @@
     </main>
     
 
-
-
-    
-
-
-
-
     <!-- SCRIPT -->
-        
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
