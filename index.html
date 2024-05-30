@@ -47,7 +47,7 @@
       <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bell"></i></button>
 
       <!-- Offcanvas -->
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -58,16 +58,34 @@
 
           <form class="row" novalidate>
 
+            <!-- name -->
             <div class="col-6">
               <label for="validationCustom01" class="form-label">Nome</label>
               <input type="text" class="form-control" id="validationCustom01" required>
             </div>
 
+            <!-- surname -->
             <div class="col-6">
               <label for="validationCustom01" class="form-label">Cognome</label>
               <input type="text" class="form-control" id="validationCustom01" required>
             </div>
 
+            <!-- email -->
+            <div class="col-6">
+              <label for="validationDefaultUsername" class="form-label">E-mail</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+
+            <!-- password -->
+            <div class="col-6">
+              <label for="validationDefaultPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="validationDefaultPassword" aria-describedby="inputGroupPrepend3" required>
+            </div>
+
+            <!-- email -->
             <div class="col-6">
               <label for="validationDefaultUsername" class="form-label">Indirizzo E-mail</label>
               <div class="input-group">
@@ -75,7 +93,64 @@
                 <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
               </div>
             </div>
-            
+
+            <!-- password -->
+            <div class="col-6">
+              <label for="validationDefaultPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="validationDefaultPassword" aria-describedby="inputGroupPrepend3" required>
+            </div>
+
+            <!-- adress -->
+            <div class="col-12">
+              <label for="validationDefault03" class="form-label">Indirizzo</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+
+            <!-- city -->
+            <div class="col-6">
+              <label for="validationDefault03" class="form-label">Indirizzo</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+
+            <!-- state -->
+            <div class="col-4">
+              <label for="validationDefault04" class="form-label">Stat</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Scegli...</option>
+                <option>Italia</option>
+                <option>Spagna</option>
+                <option>Francia</option>
+                <option>Inghilterra</option>
+              </select>
+            </div>
+
+            <!-- cap -->
+            <div class="col-2">
+              <label for="validationDefault03" class="form-label">CAP</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+
+            <!-- add file -->
+            <div class="mb-3">
+              <label for="validationDefault03" class="form-label">Foto</label>
+              <input type="file" class="form-control" aria-label="file example" required>
+            </div>
+
+            <!-- accept button -->
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Seleziona per proseguire
+                </label>
+              </div>
+            </div>
+
+            <!-- save and empty buttons -->
+            <label class="py-2">
+              <button type="button" class="btn btn-primary">Salva</button>
+              <button type="button" class="btn btn-warning">Svuota</button>
+            </label>
 
 
           </form>
